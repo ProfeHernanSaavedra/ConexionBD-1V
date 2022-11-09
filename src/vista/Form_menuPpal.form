@@ -27,10 +27,29 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmi_ingresoCarreraActionPerformed"/>
                   </Events>
                 </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+                <MenuItem class="javax.swing.JMenuItem" name="jmi_modificar">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Modicar  Carrera"/>
+                    <Property name="text" type="java.lang.String" value="Modificar  Carrera"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmi_modificarActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jmi_eliminar">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Eliminar Carrera"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmi_eliminarActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jmi_listar">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Listar Carreras"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmi_listarActionPerformed"/>
+                  </Events>
                 </MenuItem>
               </SubComponents>
             </Menu>
