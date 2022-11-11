@@ -15,6 +15,8 @@ import modelo.Carrera;
  */
 public class Form_modificarCarrera extends javax.swing.JFrame {
 
+    String nombre;
+    
     /**
      * Creates new form Form_modificarCarrera
      */
@@ -111,7 +113,7 @@ public class Form_modificarCarrera extends javax.swing.JFrame {
 
     private void jbtn_buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn_buscarActionPerformed
         
-        String nombre;
+        
         
         RegistroCarrera rc = new RegistroCarrera();
       
@@ -132,12 +134,12 @@ public class Form_modificarCarrera extends javax.swing.JFrame {
         
          //capturamos datos del formulario
         
-        String nombre = this.jtxt_nombreCarreraCambiar.getText();
+        String nombreNew = this.jtxt_nombreCarreraCambiar.getText();
         
-        Carrera carr = new Carrera(0, nombre);
+        
         RegistroCarrera rc = new RegistroCarrera();
         
-        if (rc.actualizarCarrera(carr)){
+        if (rc.actualizarCarrera(nombre,nombreNew)){
             
             JOptionPane.showMessageDialog(null,"Nombre Carrera Actualizada","Carrera",1);
             

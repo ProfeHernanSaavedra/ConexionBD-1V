@@ -38,15 +38,15 @@ public class RegistroCarrera {
         }
     }
 
-    public boolean actualizarCarrera(Carrera carrera) {
+    public boolean actualizarCarrera(String nombre, String nombreNew) {
         try {
             Conexion con = new Conexion();
             Connection cnx = con.obtenerConexion();
 
             String query = "UPDATE carrera set nombre = ? where nombre = ?";
             PreparedStatement stmt = cnx.prepareStatement(query);
-            stmt.setString(1, carrera.getNombre()); //esto hace referencia a las variables con simbolo ? 
-            stmt.setString(2, carrera.getNombre());
+            stmt.setString(1, nombreNew); //esto hace referencia a las variables con simbolo ? 
+            stmt.setString(2, nombre);
 
             stmt.executeUpdate();
             stmt.close();
